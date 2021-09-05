@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- 功能界面样式 -->
+    <style>
+        .leftPage{
+            //display: inline;
+            float: left;
+            width: 400px;
+            height: 100%;
+            /*background-color: #0f0f0f;*/
+        }
+        .pipelineName{
+            text-align: center;
+            //background-color: white;
+        }
+        .startPipeline{
+            float: left;
+            width: 50%;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .buildPlans{
+            float: left;
+            width: 50%;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- 结果界面样式 -->
+    <style>
+        .rightPage{
+            float: left;
+            //display: inline;
+            width: 500px;
+            height: 100%;
+            background-color: #3e8f3e;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 功能界面 -->
+    <div class="leftPage">
+        <div class="pipelineName">
+            <h1 id="pipelineName">FunsionSolar_INV</h1>
+        </div>
+        <div class="startPipeline">
+            <button id="startPipeLine">启动流水线</button>
+        </div>
+        <div class="buildPlans">
+            <span id="buildPlans" onclick="showPlans()">执行计划</span>
+        </div>
+        <div class="jobtree">
+
+        </div>
+    </div>
+
+    <!-- 结果界面 -->
+    <div class="rightPage">
+        <h1>右边界面</h1>
+    </div>
+
+</body>
+<script>
+    function showPlans(){
+
+        //console.log("点击了计划");
+    }
+</script>
+</html>
